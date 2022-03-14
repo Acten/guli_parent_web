@@ -150,7 +150,7 @@ export default {
                 // 获取每个一级分类
                 var oneSubject = this.subjectOneList[i]
                 // 比较当前courseInfo里面一级分类id和所有的一级分类id
-                if (this.courseInfo.subjectParentId == oneSubject.id) {
+                if (this.courseInfo.subjectParentId === oneSubject.id) {
                   // 获取一级分类所有的二级分类
                   this.subjectTwoList = oneSubject.children
                 }
